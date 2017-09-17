@@ -1,0 +1,128 @@
+html,
+body {
+  height: 100%;
+}
+
+.chat,
+.users_board {
+  height: 100%;
+  float: left;
+  display: block;
+  font-family: $main-font;
+
+  .user_name,
+  .user_location {
+    text-transform: capitalize;
+    margin: auto 0;
+  }
+}
+
+/*----------------*/
+/** CHAT SECTION **/
+/*----------------*/
+
+.chat {
+  width: 80%;
+  overflow: auto;
+  background: url(../img/back.jpg);
+}
+
+.message {
+  position: relative;
+  margin: 1%;
+  padding: 1%;
+  @include border-radius(10px);
+  background: rgba($main-color, 0.4);
+
+  .message_time {
+    float: right;
+    margin: auto 0 auto auto;
+    color: $message-time-color;
+  }
+}
+
+.user_chat,
+.user {
+  display: flex;
+
+  .user_img {
+    display: inline-flex;
+
+    img {
+      @include border-radius(100%);
+      max-width: 48px;
+      max-height: 48px;
+    }
+  }
+}
+
+.user_chat {
+  .user_info {
+    margin: auto 0 auto 15px;
+  }
+
+  .user_name {
+    font-size: 18px;
+  }
+}
+
+.user_text {
+  line-height: 1.4;
+  padding: 8px 2px;
+  font-size: 16px;
+}
+
+/*-----------------*/
+/** USERS SECTION **/
+/*-----------------*/
+
+.users_board {
+  width: 20%;
+  background: $background-color;
+}
+
+.users {
+  overflow: auto;
+  height: calc(100% - 130px);
+}
+
+.user {
+  margin: 3%;
+  padding: 3%;
+  @include border-radius(8px);
+  background: rgba($main-color, 0.2);
+
+  .user_info {
+    padding-left: 3%;
+    display: grid;
+  }
+
+  .user_location {
+    font-size: 12px;
+  }
+}
+
+/*-----------*/
+/** BUTTON **/
+/*---------*/
+
+.btn {
+  display: block;
+  cursor: pointer;
+  margin: 5% auto 0;
+  color: rgb(255, 255, 255);
+  background: rgba($main-color, 0.85);
+  padding: 3% 0;
+  width: 80%;
+  font-size: 16px;
+  border: none;
+  @include border-radius(5px);
+  letter-spacing: 0.4px;
+  outline: none;
+  font-family: $main-font;
+  @include transition(linear, 0.25s);
+
+  &:hover {
+    background: $main-color;
+  }
+}

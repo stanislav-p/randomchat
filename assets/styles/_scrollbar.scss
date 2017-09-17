@@ -1,0 +1,23 @@
+/*--------------*/
+/** SCROLL BAR **/
+/*--------------*/
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(161, 178, 205, 0.4);
+  -webkit-border-radius: 50px;
+
+  &:hover {
+    background-color: rgba(161, 178, 205, 0.55);
+  }
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background: rgba(101, 135, 211, 0.5);
+  -webkit-border-radius: 50px;
+
+  &:active {
+    background: rgba(101, 135, 211, 0.75);
+    -webkit-border-radius: 50px;
+  }
+}

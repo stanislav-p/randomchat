@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+html,
+body {
+  height: 100%; }
+
+.chat,
+.users_board {
+  height: 100%;
+  float: left;
+  display: block;
+  font-family: "Open Sans", sans-serif; }
+  .chat .user_name,
+  .chat .user_location,
+  .users_board .user_name,
+  .users_board .user_location {
+    text-transform: capitalize;
+    margin: auto 0; }
+
+/*----------------*/
+/** CHAT SECTION **/
+/*----------------*/
+.chat {
+  width: 80%;
+  overflow: auto;
+  background: url(../img/back.jpg); }
+
+.message {
+  position: relative;
+  margin: 1%;
+  padding: 1%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(100, 135, 210, 0.4); }
+  .message .message_time {
+    float: right;
+    margin: auto 0 auto auto;
+    color: #323232; }
+
+.user_chat,
+.user {
+  display: flex; }
+  .user_chat .user_img,
+  .user .user_img {
+    display: inline-flex; }
+    .user_chat .user_img img,
+    .user .user_img img {
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      max-width: 48px;
+      max-height: 48px; }
+
+.user_chat .user_info {
+  margin: auto 0 auto 15px; }
+
+.user_chat .user_name {
+  font-size: 18px; }
+
+.user_text {
+  line-height: 1.4;
+  padding: 8px 2px;
+  font-size: 16px; }
+
+/*-----------------*/
+/** USERS SECTION **/
+/*-----------------*/
+.users_board {
+  width: 20%;
+  background: #dbd4ca; }
+
+.users {
+  overflow: auto;
+  height: calc(100% - 130px); }
+
+.user {
+  margin: 3%;
+  padding: 3%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background: rgba(100, 135, 210, 0.2); }
+  .user .user_info {
+    padding-left: 3%;
+    display: grid; }
+  .user .user_location {
+    font-size: 12px; }
+
+/*-----------*/
+/** BUTTON **/
+/*---------*/
+.btn {
+  display: block;
+  cursor: pointer;
+  margin: 5% auto 0;
+  color: white;
+  background: rgba(100, 135, 210, 0.85);
+  padding: 3% 0;
+  width: 80%;
+  font-size: 16px;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  letter-spacing: 0.4px;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  -webkit-transition: linear, 0.25s;
+  -moz-transition: linear, 0.25s;
+  -ms-transition: linear, 0.25s;
+  -o-transition: linear, 0.25s;
+  transition: linear, 0.25s; }
+  .btn:hover {
+    background: #6487d2; }
+
+/*-----------------*/
+/** MEDIA QUERIES **/
+/*-----------------*/
+@media screen and (max-width: 1399px) {
+  /** CHAT SECTION **/
+  .chat {
+    width: 77%; }
+  /** USERS SECTION **/
+  .users_board {
+    width: 23%; } }
+
+@media screen and (max-width: 1199px) {
+  /** CHAT SECTION **/
+  .chat {
+    width: 75%; }
+    .chat .user_text {
+      padding: 8px;
+      font-size: 15px; }
+  /** USERS SECTION **/
+  .users_board {
+    width: 25%; }
+    .users_board .user_name {
+      font-size: 16px; } }
+
+@media screen and (max-width: 991px) {
+  /** CHAT SECTION **/
+  .chat {
+    width: 72%; }
+    .chat .user_name {
+      font-size: 16px; }
+  /** USERS SECTION **/
+  .users_board {
+    width: 28%; }
+  .btn {
+    font-size: 15px; } }
+
+@media screen and (max-width: 767px) {
+  /** CHAT SECTION **/
+  .chat {
+    width: 70%; }
+    .chat .user_chat {
+      margin: 1%; }
+    .chat .user_text {
+      font-size: 14px; }
+  /** USERS SECTION **/
+  .users_board {
+    width: 30%; }
+    .users_board .user_name {
+      font-size: 15px; }
+  .btn {
+    font-size: 13px; } }
+
+/*--------------*/
+/** SCROLL BAR **/
+/*--------------*/
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(161, 178, 205, 0.4);
+  -webkit-border-radius: 50px; }
+  ::-webkit-scrollbar:hover {
+    background-color: rgba(161, 178, 205, 0.55); }
+
+::-webkit-scrollbar-thumb:vertical {
+  background: rgba(101, 135, 211, 0.5);
+  -webkit-border-radius: 50px; }
+  ::-webkit-scrollbar-thumb:vertical:active {
+    background: rgba(101, 135, 211, 0.75);
+    -webkit-border-radius: 50px; }

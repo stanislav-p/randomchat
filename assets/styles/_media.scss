@@ -1,0 +1,90 @@
+/*-----------------*/
+/** MEDIA QUERIES **/
+/*-----------------*/
+
+@media screen and (max-width: 1399px) {
+
+  /** CHAT SECTION **/
+  .chat {
+    width: 77%;
+  }
+
+  /** USERS SECTION **/
+  .users_board {
+    width: 23%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+
+  /** CHAT SECTION **/
+  .chat {
+    width: 75%;
+
+    .user_text {
+      padding: 8px;
+      font-size: 15px;
+    }
+  }
+
+  /** USERS SECTION **/
+  .users_board {
+    width: 25%;
+
+    .user_name {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  /** CHAT SECTION **/
+  .chat {
+    width: 72%;
+
+    .user_name {
+      font-size: 16px;
+    }
+  }
+
+  /** USERS SECTION **/
+
+  .users_board {
+    width: 28%;
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  /** CHAT SECTION **/
+  .chat {
+    width: 70%;
+
+    .user_chat {
+      margin: 1%;
+    }
+
+    .user_text {
+      font-size: 14px;
+    }
+  }
+
+  /** USERS SECTION **/
+
+  .users_board {
+    width: 30%;
+
+    .user_name {
+      font-size: 15px;
+    }
+  }
+
+  .btn {
+    font-size: 13px;
+  }
+}
